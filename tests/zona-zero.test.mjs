@@ -191,6 +191,7 @@ test('el hero reproduce el vídeo real al entrar y mantiene el parallax seguro',
   assert.match(html, /class="section wall-parallax" id="artistas"/);
   assert.match(css, /mtlv36z1-SaveClip\.App_502574655_682519531239054_524627440372362808_n\.jpg/);
   assert.match(css, /\.hero-video \{/);
+  assert.match(css, /\.hero-video \{[^}]*width: 100%; height: 100%; object-fit: cover; object-position: center/);
   assert.match(script, /requestAnimationFrame\(updateWallParallax\)/);
   assert.match(script, /startHeroVideo\(\);/);
   assert.match(script, /'pointerdown', 'keydown', 'touchstart'/);

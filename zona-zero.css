@@ -76,7 +76,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 
 .hero { min-height: 100svh; display: grid; align-items: end; position: relative; isolation: isolate; padding: 126px 0 54px; border-bottom: 1px solid var(--border); overflow: hidden; }
 .hero-media { position: absolute; inset: 0; z-index: -2; overflow: hidden; background: #050606; }
-.hero-video { width: 100%; height: 100%; object-fit: contain; object-position: 78% center; filter: contrast(1.08) brightness(.74) saturate(.88); }
+.hero-video { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: contrast(1.08) brightness(.74) saturate(.88); }
 .hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, color-mix(in oklch, var(--bg) 88%, transparent) 3%, color-mix(in oklch, var(--bg) 72%, transparent) 43%, color-mix(in oklch, var(--bg) 18%, transparent) 72%), linear-gradient(0deg, var(--bg), transparent 45%); }
 .hero-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .55fr); gap: 40px; align-items: end; }
 .hero-layout > *, .section-head > *, .trust-layout > *, .booking-layout > *, .voices-layout > * { min-width: 0; }
