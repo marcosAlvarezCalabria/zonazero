@@ -171,11 +171,17 @@
       const stickyTop = Number.parseFloat(window.getComputedStyle(sticky).top) || 0;
       const travel = Math.max(1, bounds.height - sticky.offsetHeight);
       const scrollProgress = Math.max(0, Math.min(1, (stickyTop - bounds.top) / travel));
+      const copyEntrance = Math.max(0, Math.min(1, (scrollProgress - 0.1) / 0.16));
+      const copyExit = Math.max(0, Math.min(1, (0.9 - scrollProgress) / 0.12));
+      const copyReveal = Math.min(1 - Math.pow(1 - copyEntrance, 3), copyExit);
       const nextFrame = Math.round(scrollProgress * (frameTotal - 1));
       const direction = scrollProgress >= lastProgress ? 1 : -1;
       lastProgress = scrollProgress;
       requestedFrame = nextFrame;
       if (progressLine) progressLine.style.transform = `scaleX(${scrollProgress})`;
+      sticky.style.setProperty('--sequence-copy-opacity', copyReveal.toFixed(3));
+      sticky.style.setProperty('--sequence-copy-offset', `${Math.round((1 - copyReveal) * 36)}px`);
+      sticky.style.setProperty('--sequence-copy-clip', `${Math.round((1 - copyReveal) * 100)}%`);
       if (!drawFrame(nextFrame)) {
         loadFrame(nextFrame);
         for (let offset = 1; offset <= 8; offset += 1) {

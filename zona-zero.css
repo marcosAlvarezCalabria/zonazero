@@ -122,6 +122,9 @@ h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--fg); }
 .artist-sequence-fallback { z-index: 0; filter: saturate(.88) contrast(1.06); }
 .artist-sequence-canvas { z-index: 1; opacity: 0; transition: opacity .24s ease; }
 .artist-sequence-stage.is-ready .artist-sequence-canvas { opacity: 1; }
+.artist-sequence-copy { position: absolute; z-index: 2; left: var(--gutter); bottom: clamp(64px, 11vh, 120px); width: min(720px, calc(100% - (var(--gutter) * 2))); margin: 0; color: var(--fg); font-family: var(--font-display); font-size: clamp(3.4rem, 7vw, 6rem); font-weight: 700; line-height: .84; letter-spacing: -.03em; text-transform: uppercase; text-wrap: balance; text-shadow: 0 10px 32px rgb(0 0 0 / .78); pointer-events: none; opacity: var(--sequence-copy-opacity, 1); transform: translateY(var(--sequence-copy-offset, 0)); clip-path: inset(var(--sequence-copy-clip, 0) 0 0); }
+.artist-sequence-copy span, .artist-sequence-copy strong { display: block; }
+.artist-sequence-copy strong { color: var(--accent); font: inherit; }
 .artist-sequence-progress { position: absolute; z-index: 3; inset: auto 0 0; height: 4px; background: color-mix(in oklch, var(--fg) 14%, transparent); }
 .artist-sequence-progress span { display: block; width: 100%; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: left; }
 .artist-sequence-stage.is-static { min-height: auto; }
@@ -315,6 +318,7 @@ h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--fg); }
   .hero-stamp { max-width: 32ch; font-size: .65rem; }
   .artist-sequence-sticky { width: calc(100% - 24px); height: 84svh; }
   .artist-scroll-story.is-enhanced .artist-sequence-sticky { top: max(8svh, env(safe-area-inset-top)); }
+  .artist-sequence-copy { left: 20px; bottom: 48px; width: calc(100% - 40px); font-size: clamp(2.6rem, 13vw, 4.5rem); }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .work, .work:nth-child(n) { grid-column: auto; min-height: 320px; }
   .work:nth-child(3) { grid-column: span 2; }
@@ -400,4 +404,5 @@ h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--fg); }
   .artist-scroll-story, .artist-sequence-stage { min-height: auto !important; }
   .artist-sequence-sticky { position: relative !important; top: auto !important; }
   .artist-sequence-canvas { display: none !important; }
+  .artist-sequence-copy { --sequence-copy-opacity: 1 !important; --sequence-copy-offset: 0 !important; --sequence-copy-clip: 0 !important; }
 }

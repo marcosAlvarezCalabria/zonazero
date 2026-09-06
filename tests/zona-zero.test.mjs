@@ -239,6 +239,9 @@ test('la sección de artistas integra una secuencia de 240 fotogramas controlada
   assert.equal(frames.at(-1), 'frame-0240.jpg');
   assert.match(html, /class="artist-scroll-story"/);
   assert.match(html, /class="artist-sequence-canvas"/);
+  assert.match(html, /class="artist-sequence-copy"/);
+  assert.match(html, /La piel recuerda/);
+  assert.match(html, /lo que el tiempo no borra\./);
   assert.match(html, /data-frame-count="240"/);
   assert.match(html, /artist-sequence\/frame-0240\.jpg/);
   assert.equal(html.includes('artist-scroll-copy'), false);
@@ -256,6 +259,8 @@ test('la sección de artistas integra una secuencia de 240 fotogramas controlada
   assert.match(css, /prefers-reduced-motion[\s\S]*artist-sequence-canvas/);
   assert.match(script, /const updateSequence =/);
   assert.match(script, /requestAnimationFrame\(updateSequence\)/);
+  assert.match(script, /--sequence-copy-opacity/);
+  assert.match(script, /--sequence-copy-clip/);
   assert.match(script, /activateSequence\(\);/);
   assert.match(script, /getComputedStyle\(sticky\)\.top/);
   assert.match(script, /bounds\.height - sticky\.offsetHeight/);

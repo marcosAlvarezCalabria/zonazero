@@ -53,7 +53,7 @@ El verde aparece en una acción principal o selección activa por región, nunca
 - En escritorio el vídeo vertical se muestra completo hacia la derecha sobre carbón; en móvil ocupa el lienzo con un recorte mínimo.
 - En una entrada nueva desde el inicio, los primeros 4,5 segundos muestran únicamente el vídeo del hero; después aparecen cabecera, copy y controles con una transición breve. Una URL con ancla, el scroll restaurado o `prefers-reduced-motion` omiten la espera.
 - La sección de artistas comienza con una secuencia limpia de 240 fotogramas ligada al scroll: el ensamblaje ocupa `100svh`, permanece fijado desde que alcanza el viewport y se libera exactamente al llegar al fotograma final.
-- Dentro del plano animado no aparece copy, contador ni etiqueta; una única línea verde se rellena de izquierda a derecha según el progreso real.
+- Dentro del plano animado aparece una única frase editorial —«La piel recuerda lo que el tiempo no borra.»— ligada al progreso: entra tras comenzar el ensamblaje y se retira antes del fotograma final. No hay contador ni etiquetas; una única línea verde se rellena de izquierda a derecha según el progreso real.
 - La secuencia se activa cerca del viewport, precarga una ventana pequeña en la dirección de avance y descarta fotogramas lejanos para limitar memoria. Si un fotograma aún no está listo, conserva el más cercano disponible.
 - Los paños de ladrillo real aparecen como fondo ambiental en hero, profesionales y protocolo, con parallax vertical limitado a 38 px en escritorio y 18 px en móvil.
 - Transiciones de filtro y pasos de 220–420 ms con salida exponencial.
