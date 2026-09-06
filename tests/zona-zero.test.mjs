@@ -65,7 +65,7 @@ test('el roster y la consulta utilizan los profesionales confirmados', async () 
   assert.equal(professionalSelect.includes('>Reque<'), true, 'Reque debe poder seleccionarse para una consulta');
   assert.equal(professionalSelect.includes('>Metx<'), true, 'Metx debe poder seleccionarse para una consulta');
   assert.equal((html.match(/class="artist-thumb"/g) || []).length, 6, 'cada profesional debe tener una miniatura compacta');
-  for (const image of ['mto0jvyy-adianOwner.jpg', 'mtlu1h13-zz_post-3.jpg', 'mtlu1h14-zz_post-2.jpg', 'mto16aii-reque.tattoo.jpg', 'mtpk42zf-metxArtisjpg.jpg', 'mto08y93-nurbodiartArtisPiercingjpg.jpg']) {
+  for (const image of ['mto0jvyy-adianOwner.jpg', 'mtlu1h13-zz_post-3.jpg', 'mtlu1h14-zz_post-2.jpg', 'mto16aii-reque.tattoo.jpg', 'mtpk42zf-metxArtisjpg.jpg', 'mtpkht5n-microPiercingArtis.jpg']) {
     assert.match(html, new RegExp(image.replaceAll('.', '\\.')));
   }
   assert.match(html, /id="resenas"/);
@@ -117,7 +117,7 @@ test('la ficha de Nur utiliza su retrato y sus seis trabajos confirmados', async
   assert.match(html, /Joyería dental/);
   assert.match(html, /Micropigmentación/);
   const images = [
-    'mto08y93-nurbodiartArtisPiercingjpg.jpg',
+    'mtpkht5n-microPiercingArtis.jpg',
     'mto06v1k-SaveClip.App_681920740_18110944048885101_4937448264770988936_n.jpg',
     'mto06v59-SaveClip.App_675438174_18110944030885101_3255893492332117362_n.jpg',
     'mto06v8l-SaveClip.App_681595011_18110944039885101_22415362082006325_n.jpg',
@@ -127,6 +127,7 @@ test('la ficha de Nur utiliza su retrato y sus seis trabajos confirmados', async
   ];
   for (const image of images) assert.match(html, new RegExp(image.replaceAll('.', '\\.')));
   assert.equal((html.match(/<figure data-od-id="trabajo-nur-/g) || []).length, 6);
+  assert.equal(html.includes('mto08y93-nurbodiartArtisPiercingjpg.jpg'), false, 'la ficha debe usar el retrato nuevo de Nur');
   assert.match(html, /href="https:\/\/www\.instagram\.com\/nurbodyart\/"/);
 });
 
