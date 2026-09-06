@@ -41,7 +41,7 @@ El verde aparece en una acción principal o selección activa por región, nunca
 - La ficha de Adrián abre con su retrato de trabajo `mto0jvyy-adianOwner.jpg` y reúne en la galería sus seis obras `mtnzxq*`: realismo ilustrativo de fauna y mitología, principalmente en Black & Grey con color selectivo. Nunca debe mezclar las imágenes `mtnz5w*`, que pertenecen a Reque.
 - La ficha de Nur abre con su retrato `mto08y93-*` y utiliza únicamente los seis trabajos confirmados `mto06v*`: joyería dental y micropigmentación. El copy no atribuye técnicas ni servicios que no estén respaldados por esas imágenes o por el usuario.
 - La ficha de Reque abre con `mto16aii-reque.tattoo.jpg` y reúne los siete trabajos confirmados `mto16a*`. En la portada el mismo retrato queda contenido en la miniatura de 52–72 px junto a su nombre; las imágenes de obra no aparecen a gran formato en el roster.
-- La ficha de Metx reúne únicamente los seis trabajos confirmados `mto1gl*`. Hasta recibir un retrato personal, `mto1glu2-*` funciona como imagen representativa y miniatura compacta de 52–72 px; el texto alternativo nunca la presenta como retrato.
+- La ficha de Metx abre con su retrato confirmado `mtpk42zf-metxArtisjpg.jpg` y reúne únicamente los seis trabajos confirmados `mto1gl*`. En la portada, el mismo retrato queda contenido en la miniatura compacta de 52–72 px.
 - Consulta guiada con progreso, validación, retorno al paso anterior y resumen final.
 - La galería usa botones nativos que abren un visor modal; los filtros anuncian la cantidad de trabajos visibles.
 - Menú móvil y visor contienen el foco mientras están abiertos y lo devuelven al control de origen al cerrarse.

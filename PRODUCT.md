@@ -46,7 +46,7 @@ Nombre Zona Zero; voz directa, urbana y profesional; logotipo verde eléctrico; 
 - Perfil de Adrián: `@adrian.zzero`, propietario y tatuador. Su retrato confirmado es `mto0jvyy-adianOwner.jpg`. Las fotografías `mtnzxq*` confirman un trabajo centrado en realismo ilustrativo, Black & Grey, fauna y mitología, con uso puntual del color. Las fotografías `mtnz5w*` pertenecen a Reque y no deben atribuirse a Adrián.
 - Perfil de Nur: `@nurbodyart`, piercer y body artist. El retrato `mto08y93-*` y los seis trabajos `mto06v*` están confirmados por el usuario; muestran joyería dental y micropigmentación. Sustituye a Albar en el roster y en la consulta.
 - Perfil de Reque: `@reque.tattoo`, tatuador. El retrato cuadrado `mto16aii-reque.tattoo.jpg` y los siete trabajos `mto16a*` están confirmados por el usuario; muestran realismo Black & Grey, composiciones narrativas y referencias de cómic y cine. En la portada su imagen se usa únicamente como miniatura compacta junto al nombre.
-- Perfil de Metx: artista. Los seis trabajos `mto1gl*` están confirmados por el usuario; muestran ilustración, línea negra, blackwork y color selectivo. Como no se ha aportado un retrato personal, la obra cuadrada de la mariposa se usa como imagen representativa y como miniatura compacta en la portada.
+- Perfil de Metx: tatuadora. Su retrato confirmado es `mtpk42zf-metxArtisjpg.jpg`. Los seis trabajos `mto1gl*` están confirmados por el usuario; muestran ilustración, línea negra, blackwork y color selectivo. El retrato se usa también como miniatura compacta en la portada.
 
 No hay tarifas ni calendarios de disponibilidad aportados.
 

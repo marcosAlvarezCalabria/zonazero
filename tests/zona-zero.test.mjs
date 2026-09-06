@@ -65,17 +65,18 @@ test('el roster y la consulta utilizan los profesionales confirmados', async () 
   assert.equal(professionalSelect.includes('>Reque<'), true, 'Reque debe poder seleccionarse para una consulta');
   assert.equal(professionalSelect.includes('>Metx<'), true, 'Metx debe poder seleccionarse para una consulta');
   assert.equal((html.match(/class="artist-thumb"/g) || []).length, 6, 'cada profesional debe tener una miniatura compacta');
-  for (const image of ['mto0jvyy-adianOwner.jpg', 'mtlu1h13-zz_post-3.jpg', 'mtlu1h14-zz_post-2.jpg', 'mto16aii-reque.tattoo.jpg', 'mto1glu2-SaveClip.App_486958963_18509873992021141_4207262605988160805_n.jpg', 'mto08y93-nurbodiartArtisPiercingjpg.jpg']) {
+  for (const image of ['mto0jvyy-adianOwner.jpg', 'mtlu1h13-zz_post-3.jpg', 'mtlu1h14-zz_post-2.jpg', 'mto16aii-reque.tattoo.jpg', 'mtpk42zf-metxArtisjpg.jpg', 'mto08y93-nurbodiartArtisPiercingjpg.jpg']) {
     assert.match(html, new RegExp(image.replaceAll('.', '\\.')));
   }
   assert.match(html, /id="resenas"/);
 });
 
-test('la ficha de Metx utiliza únicamente sus seis trabajos confirmados', async () => {
+test('la ficha de Metx utiliza su retrato y únicamente sus seis trabajos confirmados', async () => {
   const html = await readFile(resolve(root, 'artista-metx.html'), 'utf8');
-  assert.match(html, /Artista · Ilustrativo/);
+  assert.match(html, /Tatuadora · Ilustrativo/);
   assert.match(html, /Línea · Blackwork/);
-  assert.match(html, /Trabajo representativo de Metx/);
+  assert.match(html, /mtpk42zf-metxArtisjpg\.jpg/);
+  assert.match(html, /Retrato de Metx, tatuadora de Zona Zero/);
   const images = [
     'mto1gl65-SaveClip.App_473707889_18495452926021141_3606689238667488404_n.jpg',
     'mto1gl75-SaveClip.App_582437860_18556206010021141_1105020117768374969_n.jpg',
