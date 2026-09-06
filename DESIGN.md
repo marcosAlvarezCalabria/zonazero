@@ -64,7 +64,7 @@ El verde aparece en una acción principal o selección activa por región, nunca
 ## Responsive
 
 - El hero cambia de composición partida a imagen apilada antes de 900 px.
-- La secuencia de artistas ocupa todo el viewport antes de las fichas de Adrián, Dani, Yera, Reque, Metx y Nur; Adrián aparece primero como propietario. La sección elimina padding y fondos que puedan crear huecos o romper el comportamiento sticky.
+- En escritorio, la secuencia de artistas ocupa todo el ancho y alto del viewport antes de las fichas de Adrián, Dani, Yera, Reque, Metx y Nur; Adrián aparece primero como propietario. La sección elimina anchos fijos, padding y fondos que puedan crear huecos o romper el comportamiento sticky.
 - En móvil, el plano se reduce a `84svh` con 12 px de margen lateral y se centra verticalmente; escritorio conserva el viewport completo.
 - La galería usa dos columnas en tablet y una composición editorial alterna en móvil.
 - Navegación móvil en panel de pantalla completa con foco controlado.

@@ -246,8 +246,9 @@ test('la sección de artistas integra una secuencia de 240 fotogramas controlada
   assert.match(html, /class="artist-sequence-progress"/);
   assert.match(css, /artist-scroll-story\.is-enhanced/);
   assert.match(css, /artist-sequence-stage \{ min-height: 300svh/);
-  assert.match(css, /artist-sequence-sticky \{ position: relative; width: 100%; height: 100svh/);
+  assert.match(css, /artist-sequence-sticky \{ position: relative; width: 100%; max-width: none; height: 100svh/);
   assert.match(css, /artist-sequence-sticky \{ position: sticky; top: 0/);
+  assert.equal(/class="artist-sequence-sticky"\s+style=/.test(html), false, 'la secuencia no debe conservar un ancho fijo inline');
   assert.match(css, /#artistas\.section \{ padding-block: 0/);
   assert.match(css, /#artistas\.wall-parallax \{ overflow: clip/);
   assert.match(css, /@media \(max-width: 700px\)[\s\S]*artist-sequence-sticky \{ width: calc\(100% - 24px\); height: 84svh/);
