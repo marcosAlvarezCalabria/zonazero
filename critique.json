@@ -1,0 +1,25 @@
+{
+  "kind": "critique-panel",
+  "score": 4.8,
+  "axes": {
+    "clarity": { "score": 5, "notes": "Metx se integra como profesional identificable mediante nombre, miniatura, función y enlace a su ficha." },
+    "hierarchy": { "score": 5, "notes": "Las fotografías acompañan a los nombres sin competir con el contenido ni convertirse en bloques protagonistas." },
+    "typography": { "score": 5, "notes": "La reducción controlada del nombre conserva el carácter condensado y mejora el equilibrio con las miniaturas." },
+    "motion": { "score": 5, "notes": "Solo existe una respuesta breve de escala y color al interactuar; respeta la reducción de movimiento global." },
+    "brand": { "score": 4, "notes": "El tratamiento carbón, bordes rectos y fotografía contenida mantiene la identidad industrial de Zona Zero." }
+  },
+  "review": {
+    "philosophy": 5,
+    "hierarchy": 5,
+    "execution": 5,
+    "specificity": 5,
+    "restraint": 4,
+    "fixes_applied": [
+      "Se añadió una obra representativa de Metx como miniatura compacta sin presentarla como retrato.",
+      "Las miniaturas quedan limitadas a 72 px en escritorio y 52 px en móvil.",
+      "La foto se mantiene junto al nombre en todos los puntos de ruptura.",
+      "Los seis trabajos confirmados de Metx declaran dimensiones y carga adecuada.",
+      "Las filas redujeron su altura sin perder el área táctil ni la información de especialidad."
+    ]
+  }
+}
