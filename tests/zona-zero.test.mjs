@@ -251,6 +251,8 @@ test('la sección de artistas integra una secuencia de 240 fotogramas controlada
   assert.match(css, /artist-scroll-story\.is-enhanced/);
   assert.match(css, /artist-sequence-stage \{ min-height: 300svh/);
   assert.match(css, /artist-sequence-sticky \{ position: relative; width: 100%; max-width: none; height: 100svh/);
+  assert.match(css, /@media \(min-width: 701px\)[\s\S]*artist-scroll-story, \.artist-sequence-stage, \.artist-sequence-sticky \{[\s\S]*width: 100vw/);
+  assert.match(css, /margin-left: calc\(50% - 50vw\)/);
   assert.match(css, /artist-sequence-sticky \{ position: sticky; top: 0/);
   assert.equal(/class="artist-sequence-sticky"\s+style=/.test(html), false, 'la secuencia no debe conservar un ancho fijo inline');
   assert.match(css, /#artistas\.section \{ padding-block: 0/);

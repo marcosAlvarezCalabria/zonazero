@@ -131,6 +131,17 @@ h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--fg); }
 .artist-sequence-stage.is-static .artist-sequence-sticky { position: relative; top: auto; }
 .artist-sequence-stage.is-static .artist-sequence-progress span { transform: scaleX(1); }
 
+@media (min-width: 701px) {
+  .artist-scroll-story, .artist-sequence-stage, .artist-sequence-sticky {
+    width: 100vw;
+    max-width: none;
+  }
+  .artist-scroll-story {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
 #artistas.section { padding-block: 0; }
 #artistas.wall-parallax { overflow: clip; }
 #artistas.wall-parallax::before { display: none; }
