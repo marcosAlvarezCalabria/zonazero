@@ -2,21 +2,21 @@
   "kind": "critique-panel",
   "score": 4.8,
   "axes": {
-    "clarity": { "score": 5, "notes": "La navegación y el rótulo Reseñas en Google hacen que la prueba social sea localizable en segundos." },
+    "clarity": { "score": 5, "notes": "La navegación, el rótulo y la franja de estrellas hacen que la prueba social sea localizable en segundos." },
     "hierarchy": { "score": 5, "notes": "El titular conduce, el contexto explica y el enlace a Google queda como acción secundaria antes de los testimonios." },
     "typography": { "score": 5, "notes": "La sección conserva la escala condensada, el cuerpo legible y los metadatos monoespaciados del sistema Zona Zero." },
     "motion": { "score": 5, "notes": "No se añade movimiento ornamental; la sección mantiene el ritmo estático que equilibra el hero y la secuencia animada." },
-    "brand": { "score": 4, "notes": "El contraste blanco, carbón y verde mantiene el carácter industrial sin imitar visualmente la interfaz de Google." }
+    "brand": { "score": 5, "notes": "Las estrellas usan el verde eléctrico de Zona Zero y mantienen el carácter industrial sin imitar visualmente la interfaz de Google." }
   },
   "review": {
     "philosophy": 5,
     "hierarchy": 5,
     "execution": 5,
     "specificity": 5,
-    "restraint": 4,
+    "restraint": 5,
     "fixes_applied": [
       "Se reutilizaron los tres testimonios aportados en lugar de inventar reseñas nuevas.",
-      "Se evitó publicar puntuaciones, recuentos o identidades no verificadas.",
+      "Las cinco estrellas se concentran en una única franja visual y no se repiten en cada testimonio.",
       "Se añadió acceso a la sección desde la navegación de escritorio y móvil.",
       "El enlace externo abre la búsqueda del estudio en Google con atributos de seguridad.",
       "La composición refluye a una columna y conserva un objetivo táctil de 48 px."

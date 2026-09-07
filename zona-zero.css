@@ -182,7 +182,8 @@ h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--fg); }
 .voices-section { background: var(--fg); color: var(--bg); }
 .voices-section .kicker { color: oklch(48% 0.16 142); }
 .voices-layout { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: clamp(42px, 8vw, 120px); align-items: start; }
-.voices-title h2 { margin-top: 18px; }
+.google-stars { margin-top: 18px; color: oklch(48% 0.16 142); font: 700 clamp(1.45rem, 2.4vw, 2rem)/1 var(--display); letter-spacing: .14em; }
+.voices-title h2 { margin-top: 16px; }
 .voices-intro { max-width: 42ch; margin: 26px 0 0; color: color-mix(in oklch, var(--bg) 68%, transparent); font-size: 1.05rem; }
 .google-reviews-link { min-height: 48px; display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; padding: 10px 0; border-bottom: 2px solid var(--bg); color: var(--bg); font: 600 .76rem/1 var(--mono); letter-spacing: .03em; text-transform: uppercase; }
 .google-reviews-link span:first-child { color: oklch(48% 0.16 142); font-weight: 700; }
