@@ -69,6 +69,11 @@ test('el roster y la consulta utilizan los profesionales confirmados', async () 
     assert.match(html, new RegExp(image.replaceAll('.', '\\.')));
   }
   assert.match(html, /id="resenas"/);
+  assert.match(html, /href="#resenas">Reseñas<\/a>/);
+  assert.match(html, /Reseñas en Google/);
+  assert.match(html, /google\.com\/maps\/search\/\?api=1&amp;query=Zona\+Zero\+Tattoo\+Legan%C3%A9s/);
+  assert.match(html, /class="google-reviews-link"[^>]*target="_blank"[^>]*rel="noopener noreferrer"/);
+  assert.equal((html.match(/<blockquote data-od-id="resena-/g) || []).length, 3);
 });
 
 test('la ficha de Metx utiliza su retrato y únicamente sus seis trabajos confirmados', async () => {

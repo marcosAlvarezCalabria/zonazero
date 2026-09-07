@@ -46,6 +46,7 @@ El verde aparece en una acción principal o selección activa por región, nunca
 - La galería usa botones nativos que abren un visor modal; los filtros anuncian la cantidad de trabajos visibles.
 - Menú móvil y visor contienen el foco mientras están abiertos y lo devuelven al control de origen al cerrarse.
 - Los errores del formulario se asocian al campo correspondiente, actualizan `aria-invalid` y conducen el foco a la corrección necesaria.
+- Las reseñas se presentan en una sección clara vinculada desde la navegación, con testimonios aportados y acceso externo a Google; no se inventan puntuaciones, recuentos ni identidades.
 
 ## Motion
 

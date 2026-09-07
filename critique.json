@@ -2,11 +2,11 @@
   "kind": "critique-panel",
   "score": 4.8,
   "axes": {
-    "clarity": { "score": 5, "notes": "Metx se integra como profesional identificable mediante nombre, miniatura, función y enlace a su ficha." },
-    "hierarchy": { "score": 5, "notes": "Las fotografías acompañan a los nombres sin competir con el contenido ni convertirse en bloques protagonistas." },
-    "typography": { "score": 5, "notes": "La reducción controlada del nombre conserva el carácter condensado y mejora el equilibrio con las miniaturas." },
-    "motion": { "score": 5, "notes": "Solo existe una respuesta breve de escala y color al interactuar; respeta la reducción de movimiento global." },
-    "brand": { "score": 4, "notes": "El tratamiento carbón, bordes rectos y fotografía contenida mantiene la identidad industrial de Zona Zero." }
+    "clarity": { "score": 5, "notes": "La navegación y el rótulo Reseñas en Google hacen que la prueba social sea localizable en segundos." },
+    "hierarchy": { "score": 5, "notes": "El titular conduce, el contexto explica y el enlace a Google queda como acción secundaria antes de los testimonios." },
+    "typography": { "score": 5, "notes": "La sección conserva la escala condensada, el cuerpo legible y los metadatos monoespaciados del sistema Zona Zero." },
+    "motion": { "score": 5, "notes": "No se añade movimiento ornamental; la sección mantiene el ritmo estático que equilibra el hero y la secuencia animada." },
+    "brand": { "score": 4, "notes": "El contraste blanco, carbón y verde mantiene el carácter industrial sin imitar visualmente la interfaz de Google." }
   },
   "review": {
     "philosophy": 5,
@@ -15,11 +15,11 @@
     "specificity": 5,
     "restraint": 4,
     "fixes_applied": [
-      "Se añadió una obra representativa de Metx como miniatura compacta sin presentarla como retrato.",
-      "Las miniaturas quedan limitadas a 72 px en escritorio y 52 px en móvil.",
-      "La foto se mantiene junto al nombre en todos los puntos de ruptura.",
-      "Los seis trabajos confirmados de Metx declaran dimensiones y carga adecuada.",
-      "Las filas redujeron su altura sin perder el área táctil ni la información de especialidad."
+      "Se reutilizaron los tres testimonios aportados en lugar de inventar reseñas nuevas.",
+      "Se evitó publicar puntuaciones, recuentos o identidades no verificadas.",
+      "Se añadió acceso a la sección desde la navegación de escritorio y móvil.",
+      "El enlace externo abre la búsqueda del estudio en Google con atributos de seguridad.",
+      "La composición refluye a una columna y conserva un objetivo táctil de 48 px."
     ]
   }
 }
